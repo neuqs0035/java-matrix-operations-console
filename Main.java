@@ -49,4 +49,9 @@ public class Main{
 
 class Matrix{
 
+    static Scanner scan = new Scanner(System.in);
+
+    public int[][] createMatrix(int row_count,int col_count){
+        return new int[row_count][col_count];
+    }
 }
