@@ -54,4 +54,20 @@ class Matrix{
     public int[][] createMatrix(int row_count,int col_count){
         return new int[row_count][col_count];
     }
+
+    public int[][] fillMatrix(int[][] matrix){
+
+        int noRows = matrix.length;
+        int noCols = matrix[0].length;
+
+        for(int i = 0;i<noRows;i++){
+            for(int j=0;i<noCols;j++){
+                System.out.println("\nEnter Element For Index matrix[" + i + "][" + j + "] : ");
+                int element = scan.nextInt();
+                matrix[i][j] = element;
+            }
+        }
+
+        return matrix;
+    }
 }
